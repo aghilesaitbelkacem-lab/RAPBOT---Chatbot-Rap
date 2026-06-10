@@ -1,9 +1,6 @@
 # 🎤 RAPBOT — Chatbot Spécialisé en Rap
 
 > Un chatbot intelligent dédié à l'univers du rap — artistes, albums, actus et culture hip-hop.
-
-![Interface RAPBOT](screenshot.png)
-
 ---
 
 ## ✨ Fonctionnalités
