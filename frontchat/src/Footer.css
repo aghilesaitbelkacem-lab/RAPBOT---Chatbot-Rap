@@ -1,0 +1,69 @@
+/* Footer reutilisable.
+   Utilise les variables de theme si elles existent (--text, --muted, --line, --gold),
+   avec des valeurs de secours pour fonctionner dans n'importe quel projet. */
+
+.site-footer {
+  width: 100%;
+  padding: 18px 24px;
+  border-top: 1px solid var(--line, rgba(0, 0, 0, 0.1));
+  background: transparent;
+  font-family: var(--sans, system-ui, 'Segoe UI', sans-serif);
+  color: var(--muted, #6c6577);
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.footer-nom {
+  font-weight: 700;
+  color: var(--text, #1b1825);
+}
+.footer-role {
+  font-size: 0.78rem;
+  color: var(--muted, #6c6577);
+}
+
+.footer-links {
+  display: flex;
+  gap: 14px;
+}
+.footer-links a {
+  color: var(--muted, #6c6577);
+  display: inline-flex;
+  transition: color 0.15s, transform 0.12s;
+}
+.footer-links a:hover {
+  color: var(--gold, #f5a623);
+  transform: translateY(-2px);
+}
+.footer-links a:focus-visible {
+  outline: 2px solid var(--gold, #f5a623);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
